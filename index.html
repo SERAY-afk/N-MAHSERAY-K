@@ -7,95 +7,99 @@
 
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
         body {
+            margin: 0;
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #222;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
         }
 
-        .card {
+        .page {
             width: 90%;
-            max-width: 700px;
-            background: black;
-            padding: 40px;
+            max-width: 1100px;
+            min-height: 75vh;
+            padding: 50px;
+            border: 1px solid #444;
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         h1 {
-            color: #6a1b9a;
-            margin-bottom: 10px;
-        }
-
-        .title {
-            color: #666;
-            margin-bottom: 25px;
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 40px;
         }
 
         h2 {
-            color: #6a1b9a;
-            margin: 20px 0 10px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         p {
+            font-size: 17px;
             line-height: 1.7;
-            margin-bottom: 15px;
+            color: #ddd;
+        }
+
+        .career {
+            margin-top: 20px;
         }
 
         footer {
-            margin-top: 25px;
-            font-size: 14px;
-            color: #777;
+            text-align: center;
+            margin-top: 30px;
+            color: #aaa;
         }
     </style>
 </head>
 
 <body>
 
-    <main class="card">
+    <div class="page">
+
         <h1>N'mah Seray Kamara</h1>
 
-        <p class="title">
-            Multimedia & Broadcasting Student | Aspiring Multimedia Director
-        </p>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am N'mah Seray Kamara, a Multimedia and Broadcasting student
+                passionate about creativity, technology, storytelling, and digital media.
+            </p>
+        </section>
 
-        <h2>About Me</h2>
-        <p>
-            I am N'mah Seray Kamara, a creative and ambitious multimedia
-            student from Sierra Leone. I am passionate about storytelling,
-            technology, media, and creative communication.
-        </p>
+        <section>
+            <h2>Why I Study Web Technology</h2>
+            <p>
+                I study Web Technology because I want to understand how websites
+                and digital experiences are created. It helps me combine creativity
+                with technology and gives me skills to share ideas with a wider audience.
+            </p>
+        </section>
 
-        <h2>Why I Study Web Technology</h2>
-        <p>
-            I study web technology because I want to understand how websites
-            and digital platforms are created. Web technology helps me combine
-            creativity with technology and gives me the skills to share my
-            ideas and media projects online.
-        </p>
-
-        <h2>My Career</h2>
-        <p>
-            My career goal is to become a successful <strong>Multimedia Director</strong>.
-            I want to lead creative projects, produce meaningful digital
-            content, and use technology and storytelling to connect with
-            audiences.
-        </p>
+        <section class="career">
+            <h2>My Career</h2>
+            <p>
+                My career goal is to become a Multimedia Director. I want to use
+                technology, photography, video, storytelling, and creative direction
+                to produce meaningful and engaging media.
+            </p>
+        </section>
 
         <footer>
-            © 2026 N'mah Seray Kamara | My Creative Journey
+            © 2026 N'mah Seray Kamara
         </footer>
-    </main>
+
+    </div>
 
 </body>
 </html>
